@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Linux Libertine,Georgia,Times,serif;
+}
+
+.central {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.central-img-container {
+  margin-bottom: 10px;
+  /* border: solid 1px red; */
+}
+
+.central-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.hero {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container{
+  margin-top: 20px;
+  padding: 0px;
+  height: 300px;
+  max-width: 750px;
+  min-width: 650px;
+  /* border: solid 1px rosybrown; */
+  position: relative;
+}
+
+.hero-container > img {
+  margin: 0px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hero-languages div {
+  margin: 0px;
+  text-align: center;
+}
+
+.hero-languages div > a {
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #36c;
+  text-decoration: none;
+}
+
+.hero-languages div > p {
+  margin-top: 5px;
+  width: 150px;
+  font-size: small;
+  color: #54595d
+}
+
+#lang-1 {
+  position: absolute;
+  left: 20%;
+  top: 0%
+}
+
+#lang-2 {
+  position: absolute;
+  right: 20%;
+  top: 0%;
+}
+#lang-3 {
+  position: absolute;
+  left: 10%;
+  top: 20%
+}
+#lang-4 {
+  position: absolute;
+  right: 10%;
+  top: 20%
+}
+#lang-5 {
+  position: absolute;
+  left: 8%;
+  top: 40%
+}
+#lang-6 {
+  position: absolute;
+  right: 8%;
+  top: 40%
+}
+#lang-7 {
+  position: absolute;
+  left: 10%;
+  top: 60%
+}
+#lang-8 {
+  position: absolute;
+  right: 10%;
+  top: 60%
+}
+#lang-9 {
+  position: absolute;
+  left: 20%;
+  top: 80%
+}
+#lang-10 {
+  position: absolute;
+  right: 20%;
+  top: 82%
+}
+
+.search {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-input-container {
+  border: solid 1px #a2a9b1;
+  width: 390px;
+  height: 40px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 2px;
+}
+
+.search-input-container > input {
+  margin: 0px;
+  height: inherit;
+  width: 350px;
+  border: 0px;
+  padding: 0px;
+}
+
+.search-input-container:hover {
+  border: solid 1px #72777d;
+}
+
+.search > button {
+  background: #36c;
+  background-image: url('/assets/sprite_assets/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
