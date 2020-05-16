@@ -127,18 +127,66 @@ body {
   height: 40px;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-input-container > input {
   margin: 0px;
   height: inherit;
-  width: 350px;
+  width: 330px;
   border: 0px;
-  padding: 0px;
+  padding: 0px 10px 0px 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.search-input-container > input:focus {
+  outline: none;
 }
 
 .search-input-container:hover {
   border: solid 1px #72777d;
+}
+
+.search-select {
+  margin: 5px;
+  padding: 0px;
+  height: 25px;
+  width: 45px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.search-select:hover{
+  border: solid 1px #3466cc;
+  cursor: pointer;
+}
+
+.search-select > label {
+  position: absolute;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 5px;
+  left: 5px;
+  z-index: -1;
+}
+
+.search-select > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  background: transparent;
+  background-image: url(/assets/sprite_assets/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  outline: none;
 }
 
 .search > button {
@@ -151,3 +199,61 @@ body {
   border-radius: 2px;
   cursor: pointer;
 }
+
+.list-lang {
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.list-button {
+  margin: 0px;
+  padding: 5px;
+  width: 250px;
+  border: solid 1px #72777c;
+  border-radius: 2px;
+  color: #36c;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-button:hover {
+  outline: none;
+  border: solid 2px #36c;
+}
+
+.list-button img {
+  margin-left: 0px;
+}
+
+.list-button label {
+  margin: 0 10px 0 10px;
+  font-size: 14px;
+}
+
+.list-button > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  background: transparent;
+  background-image: url(/assets/sprite_assets/arrow-down-blue.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  border: none;
+  width: 250px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+}
+
+hr {
+  margin: 0.26em 1.3rem;
+}
+
